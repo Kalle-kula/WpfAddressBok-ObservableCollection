@@ -34,5 +34,10 @@ namespace Wpf.Lektion3.ObservableCollection
             txtName.Text = string.Empty;
             txtEmejl.Text = string.Empty;
         }
+
+        private void BtnRemove_OnClick(object sender, RoutedEventArgs e)
+        {
+            personer.Remove((listPerson.SelectedItem as Person));
+        }
     }
 }
